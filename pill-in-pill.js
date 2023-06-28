@@ -9,7 +9,7 @@ var datasets = window.datasets;
 var url_string = window.location.href; // www.test.com?filename=test
     var url = new URL(url_string);
     var paramValue = url.searchParams.get("hi");
-    alert(paramValue);
+    console.log(paramValue);
 
 
 //Step 2. Query your dataset(s): https://developer.domo.com/docs/dev-studio-references/data-api
