@@ -25,13 +25,13 @@ var data = {
   limits: [500, 1000, 2500]
 };
 
-const actualProgress = document.getElementById("actual-progress");
-const projectedProgress = document.getElementById("projected-progress");
-const caption = document.getElementById("vv");
+var actualProgress = document.getElementById("actual-progress");
+var projectedProgress = document.getElementById("projected-progress");
+var caption = document.getElementById("vv");
 
-const barLength = Math.max(...data.limits);
-const actualPercentage = (data.actual / barLength) * 100;
-const projectedPercentage = ((data.projected - data.actual) / barLength) * 100;
+var barLength = Math.max(...data.limits);
+var actualPercentage = (data.actual / barLength) * 100;
+var projectedPercentage = ((data.projected - data.actual) / barLength) * 100;
 
 actualProgress.style.width = `${actualPercentage}%`;
 projectedProgress.style.width = `${projectedPercentage}%`;
