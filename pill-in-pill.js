@@ -19,7 +19,7 @@ var query = `/data/v1/${datasets[0]}?fields=${fields.join()}&groupby=${groupby.j
 domo.get(query).then(handleResult);
 
 
-const data = {
+var data = {
   actual: 1155,
   projected: 1573,
   limits: [500, 1000, 2500]
