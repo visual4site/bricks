@@ -6,7 +6,10 @@ var domo = window.domo; // For more on domo.js: https://developer.domo.com/docs/
 var datasets = window.datasets;
 
 //Step 1. Select your dataset(s) from the button in the bottom left corner
-
+var url_string = window.location.href; // www.test.com?filename=test
+    var url = new URL(url_string);
+    var paramValue = url.searchParams.get("hi");
+    alert(paramValue);
 
 
 //Step 2. Query your dataset(s): https://developer.domo.com/docs/dev-studio-references/data-api
