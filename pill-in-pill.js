@@ -33,15 +33,12 @@ const barLength = Math.max(...data.limits);
 const actualPercentage = (data.actual / barLength) * 100;
 const projectedPercentage = ((data.projected - data.actual) / barLength) * 100;
 
-debugger;
-
 actualProgress.style.width = `${actualPercentage}%`;
 projectedProgress.style.width = `${projectedPercentage}%`;
 
 
 //Step 3. Do something with the data from the query result
 function handleResult(data){
-  debugger;
   console && console.log(data);
   actualProgress.innerHTML = convertToInternationalCurrencySystem(data.reduce((s, a) => s + a.revenue, 0));
   
