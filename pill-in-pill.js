@@ -38,9 +38,9 @@ projectedProgress.style.width = `${projectedPercentage}%`;
 
 
 //Step 3. Do something with the data from the query result
-function handleResult(data){
-  console && console.log(data);
-  actualProgress.innerHTML = convertToInternationalCurrencySystem(data.reduce((s, a) => s + a.revenue, 0));
+function handleResult(data1){
+  console && console.log(data1);
+  actualProgress.innerHTML = convertToInternationalCurrencySystem(data1.reduce((s, a) => s + a.revenue, 0));
   
 }
 
