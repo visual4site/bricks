@@ -6,8 +6,6 @@
 
 debugger;
 //Step 2. Query your dataset(s): https://developer.domo.com/docs/dev-studio-references/data-api
-domo.get(query).then(handleResult);
-
 
 var data = {
   actual: 1155,
