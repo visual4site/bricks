@@ -39,6 +39,7 @@ projectedProgress.style.width = `${projectedPercentage}%`;
 
 //Step 3. Do something with the data from the query result
 function handleResult(data1){
+ debugger;
   console && console.log(data1);
   if (funk == 'avg') {
     actualProgress.innerHTML = convertToInternationalCurrencySystem((data1.reduce((s, a) => s + a.revenue, 0))/data1.length) + '(avg)';    
