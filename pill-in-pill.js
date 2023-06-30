@@ -31,12 +31,12 @@ function handleResult(data1){
  let pillText = '';
   console && console.log(data1);
   if (funk == 'avg') {
-    pillText = actualProgress.innerHTML = convertToInternationalCurrencySystem((data1.reduce((s, a) => s + a.revenue, 0))/data1.length) + '(avg)';    
+    pillText = convertToInternationalCurrencySystem((data1.reduce((s, a) => s + a.revenue, 0))/data1.length) + '(avg)';    
   } else {
-    pillText = actualProgress.innerHTML = convertToInternationalCurrencySystem(data1.reduce((s, a) => s + a.revenue, 0));
+    pillText = convertToInternationalCurrencySystem(data1.reduce((s, a) => s + a.revenue, 0));
   }
   if (dollars) pillText = '$' + pillText;
-  return pillText;
+  return actualProgress.innerHTML = pillText;
 }
 
 function convertToInternationalCurrencySystem (labelValue) {
